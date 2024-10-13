@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SotMAsia2024" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/myperple</item>
+         <item name="colorPrimaryVariant">@color/myperple</item>
+         <item name="android:statusBarColor">@color/myperple</item>
     </style>
 
     <style name="Theme.SotMAsia2024" parent="Base.Theme.SotMAsia2024" />

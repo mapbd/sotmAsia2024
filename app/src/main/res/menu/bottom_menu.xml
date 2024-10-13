@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/baseline_help_24"/>
+
+    <item
+        android:title=""
+        android:enabled="true"/>
+
+
+    <item android:id="@+id/coc"
+        android:title="Code of Conduct"
+        android:icon="@drawable/code_of_conduct"/>
+    <item android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/baseline_map_24"/>
+</menu>

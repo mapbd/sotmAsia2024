@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="myperple">#46449B</color>
+    <color name="appBg">#45709D</color>
+
 </resources>
