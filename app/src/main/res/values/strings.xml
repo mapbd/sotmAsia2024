@@ -39,7 +39,8 @@
     <string name="bus02">Kolatoli Bus Stand: in Cox"'"s Bazar is approx 2 Km distance between Vanue.</string>
     <string name="bus03">Cox"'"s Bazar Central Bus Terminal: in Cox"'"s Bazar is approx 4.5 Km distance between Vanue.</string>
     <string name="bus04">Laldighi Bus Stand: in Cox"'"s Bazar is approx 2.5 Km distance between Vanue.</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

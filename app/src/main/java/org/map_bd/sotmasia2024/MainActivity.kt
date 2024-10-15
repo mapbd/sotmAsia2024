@@ -1,7 +1,11 @@
 package org.map_bd.sotmasia2024
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -37,9 +41,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.home -> openFragment(HomeFragment())
+//                R.id.home ->{
+//                    val nextpage = Intent(this,NoteActivity::class.java);
+//                    startActivity(nextpage);
+//                }
                 R.id.help -> openFragment(HelpFragment())
                 R.id.coc -> openFragment(CocFragment())
-                R.id.map -> openFragment(MapFragment())
+                R.id.map -> {
+                    val nextpage = Intent(this,MapActivity::class.java);
+                    startActivity(nextpage);
+                }
             }
             true
         }
@@ -47,9 +58,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         openFragment(HomeFragment())
 
         binding.fab.setOnClickListener{
-            Toast.makeText(this, "Add note",Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "Add note",Toast.LENGTH_LONG).show()
+            val nextpage = Intent(this,NoteActivity::class.java);
+            startActivity(nextpage);
         }
 
+        changeStatusBarColor("#46449B") // Replace with your desired color code
+    }
+
+    private fun changeStatusBarColor(color: String) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window: Window = window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = android.graphics.Color.parseColor(color)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
