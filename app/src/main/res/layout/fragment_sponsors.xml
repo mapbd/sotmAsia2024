@@ -3,15 +3,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/appBg"
+    android:layout_gravity="top"
     tools:context=".SponsorsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sponsors"
-        android:textColor="@color/myperple"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins"
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:textColor="@color/myperple"
+        android:text="Our sponsors"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rectangle_border"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins"
+        android:textSize="30sp"
+        android:text="Platinum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins"
+            android:textSize="30sp"
+            android:text="Gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins"
+            android:textSize="30sp"
+            android:text="Silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins"
+            android:textSize="30sp"
+            android:text="Bronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>

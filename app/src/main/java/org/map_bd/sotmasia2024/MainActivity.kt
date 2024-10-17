@@ -1,6 +1,8 @@
 package org.map_bd.sotmasia2024
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
@@ -41,16 +43,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.home -> openFragment(HomeFragment())
-//                R.id.home ->{
-//                    val nextpage = Intent(this,NoteActivity::class.java);
-//                    startActivity(nextpage);
-//                }
                 R.id.help -> openFragment(HelpFragment())
                 R.id.coc -> openFragment(CocFragment())
-                R.id.map -> {
-                    val nextpage = Intent(this,MapActivity::class.java);
-                    startActivity(nextpage);
-                }
+                R.id.map -> openUrl("https://www.google.com/maps/dir//Shimanto+Shommelon+Kendra+Urme,+Laboni+Beach+Rd,+Cox'sBazar+4700/@21.4260547,91.9739479,18z/data=!4m18!1m8!3m7!1s0x30adc900317b8587:0x2bcba06cf2c23b16!2sShimanto+Shommelon+Kendra+Urme!8m2!3d21.4260625!4d91.9739375!15sCh5TaGltYW50byBTb21tZWxvbiBLZW5kcmEgVXJtZWWSAQVob3RlbOABAA!16s%2Fg%2F11w7kwv6nt!4m8!1m0!1m5!1m1!1s0x30adc900317b8587:0x2bcba06cf2c23b16!2m2!1d91.9739375!2d21.4260625!3e2?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D")
+//                R.id.map -> {
+//                    val nextpage = Intent(this,MapActivity::class.java);
+//                    startActivity(nextpage);
+//                }
             }
             true
         }
@@ -58,10 +57,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         openFragment(HomeFragment())
 
         binding.fab.setOnClickListener{
-//            Toast.makeText(this, "Add note",Toast.LENGTH_LONG).show()
-            val nextpage = Intent(this,NoteActivity::class.java);
-            startActivity(nextpage);
+            val nextpages = Intent(this,NoteActivity::class.java);
+            startActivity(nextpages);
         }
+
+        binding.versionText.text = getCurrentVersion(packageManager, packageName)
+
+
 
         changeStatusBarColor("#46449B") // Replace with your desired color code
     }
@@ -76,8 +78,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.x -> Toast.makeText(this,"Social Media",Toast.LENGTH_LONG).show()
-            R.id.wiki -> Toast.makeText(this,"Wiki",Toast.LENGTH_LONG).show()
+//            R.id.x -> Toast.makeText(this,"Social Media",Toast.LENGTH_LONG).show()
+            R.id.x -> openUrl("https://x.com/sotmasia")
+            R.id.wiki -> openUrl("https://wiki.openstreetmap.org/wiki/State_of_the_Map_Asia")
             R.id.sponsors -> openFragment(SponsorsFragment())
             R.id.coprograms -> openFragment(CopFragment())
             R.id.organisers -> openFragment(OrganisersFragment())
@@ -85,6 +88,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun openUrl(link: String) {
+            val uri = Uri.parse(link)
+        val inte = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(inte)
     }
 
     override fun onBackPressed() {
@@ -102,7 +111,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentTransaction.commit()
     }
 
+    fun getCurrentVersion(packageManager: PackageManager, packageName: String, flags: Int = 0): String{
+        return try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+                packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(flags.toLong())).versionName
+            }else{
+                packageManager.getPackageInfo(packageName, flags).versionName
+            }
 
+        }catch (ex: Exception){
+            return ""
+        }
+    }
 
 
 }

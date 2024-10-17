@@ -8,16 +8,22 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
+import org.map_bd.sotmasia2024.database.NoteDatabase
+import org.map_bd.sotmasia2024.repository.NoteRepository
+import org.map_bd.sotmasia2024.viewmodel.NoteViewModel
+import org.map_bd.sotmasia2024.viewmodel.NoteViewModelFactory
 
 class NoteActivity : AppCompatActivity() {
+
+    lateinit var noteViewModel: NoteViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        setupViewModel()
+
         changeStatusBarColor("#46449B") // Replace with your desired color code
     }
 
@@ -28,4 +34,12 @@ class NoteActivity : AppCompatActivity() {
             window.statusBarColor = android.graphics.Color.parseColor(color)
         }
     }
+
+    private fun setupViewModel(){
+        val noteRepository = NoteRepository(NoteDatabase(this))
+        val viewModelProviderFactory = NoteViewModelFactory(application, noteRepository)
+        noteViewModel = ViewModelProvider(this, viewModelProviderFactory)[NoteViewModel::class.java]
+    }
+
+
 }

@@ -3,10 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/bghome"
     tools:context=".HomeFragment">
 
+    <ImageView
+        android:layout_marginBottom="130dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:src="@drawable/state_of_the_map_asia_logo"/>
 
-
+    <Button
+        android:id="@+id/programIds"
+        android:textSize="15sp"
+        android:textColor="@color/myperple"
+        android:text="See Program"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:background="@drawable/transparent_bg_bordered"
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>

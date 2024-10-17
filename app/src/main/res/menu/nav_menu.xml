@@ -5,6 +5,12 @@
 
     <group android:checkableBehavior="single">
 
+
+
+        <item android:id="@+id/sponsors"
+            android:icon="@drawable/sponsors"
+            android:title="Sponsors"/>
+
         <item android:id="@+id/x"
             android:icon="@drawable/icons8_x"
             android:title="Social Media"/>
@@ -12,10 +18,6 @@
         <item android:id="@+id/wiki"
             android:icon="@drawable/icons8_wiki"
             android:title="Wiki Page"/>
-
-        <item android:id="@+id/sponsors"
-            android:icon="@drawable/sponsors"
-            android:title="Sponsors"/>
 
     </group>
 

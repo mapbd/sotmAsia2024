@@ -68,5 +68,20 @@
     <style name="Theme.SotMAsiax" parent="Base.Theme.SotMAsiax" />
 
 
+    <style name="Theme.NotesRoomPractice." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/myperple</item>
+        <item name="colorPrimaryVariant">@color/myperple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/myperple</item>
+        <item name="colorSecondaryVariant">@color/myperple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.TheNotesApp" parent="Theme.NotesRoomPractice."/>
 
 </resources>

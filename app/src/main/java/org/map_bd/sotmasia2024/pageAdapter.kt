@@ -11,20 +11,28 @@ import org.map_bd.sotmasia2024.home.ThirdFragment
 class pageAdapter(fragmentManager: FragmentManager,lifecycle: Lifecycle):
     FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {
-        return 3
+        return 4
     }
+
 
     override fun createFragment(position: Int): Fragment {
         return when (position){
-            0 ->{
+            0 -> {
                 FirstFragment()
             }
             1 ->{
                 SecondFragment()
             }
-            else ->{
+            2 ->{
                 ThirdFragment()
+            }
+            3 ->{
+                WebFragment()
+            }
+            else ->{
+                Fragment()
             }
         }
     }
+
 }
