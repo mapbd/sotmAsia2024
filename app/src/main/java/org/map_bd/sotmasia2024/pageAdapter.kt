@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import org.map_bd.sotmasia2024.home.FirstFragment
+import org.map_bd.sotmasia2024.home.FourthFragment
 import org.map_bd.sotmasia2024.home.SecondFragment
 import org.map_bd.sotmasia2024.home.ThirdFragment
 
@@ -27,7 +28,7 @@ class pageAdapter(fragmentManager: FragmentManager,lifecycle: Lifecycle):
                 ThirdFragment()
             }
             3 ->{
-                WebFragment()
+                FourthFragment()
             }
             else ->{
                 Fragment()

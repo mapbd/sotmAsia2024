@@ -4,8 +4,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import org.map_bd.sotmasia2024.home.EightFragment
 import org.map_bd.sotmasia2024.home.FirstFragment
+import org.map_bd.sotmasia2024.home.FiveFragment
 import org.map_bd.sotmasia2024.home.SecondFragment
+import org.map_bd.sotmasia2024.home.SevenFragment
+import org.map_bd.sotmasia2024.home.SixFragment
 import org.map_bd.sotmasia2024.home.ThirdFragment
 
 class pageAdapter2(fragmentManager: FragmentManager, lifecycle: Lifecycle):
@@ -18,16 +22,16 @@ class pageAdapter2(fragmentManager: FragmentManager, lifecycle: Lifecycle):
     override fun createFragment(position: Int): Fragment {
         return when (position){
             0 -> {
-                FirstFragment()
+                FiveFragment()
             }
             1 ->{
-                SecondFragment()
+                SixFragment()
             }
             2 ->{
-                ThirdFragment()
+                SevenFragment()
             }
             3 ->{
-                MapFragment()
+                EightFragment()
             }
             else ->{
                 Fragment()

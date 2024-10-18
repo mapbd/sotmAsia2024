@@ -24,7 +24,7 @@
         <activity
             android:name=".ProgramActivity"
             android:exported="false"
-            android:theme="@style/Theme.SotMAsiabd" />
+            android:theme="@style/Theme.SotMAsia2024" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"

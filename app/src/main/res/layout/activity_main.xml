@@ -50,6 +50,7 @@
                     android:id="@+id/bottom_navigation"
                     app:labelVisibilityMode="labeled"
                     app:menu="@menu/bottom_menu"
+                    app:hideOnScroll="true"
                     android:background="@android:color/transparent"/>
 
             </com.google.android.material.bottomappbar.BottomAppBar>

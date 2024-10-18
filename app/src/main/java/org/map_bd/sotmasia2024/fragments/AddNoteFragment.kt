@@ -43,7 +43,7 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note), MenuProvider {
         val menuHost: MenuHost = requireActivity()
         menuHost.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-        notesViewModel = (activity as NoteActivity).noteViewModel
+        notesViewModel = (activity  as NoteActivity).noteViewModel
         addNoteView = view
     }
 

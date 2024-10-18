@@ -1,43 +1,30 @@
 package org.map_bd.sotmasia2024
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 
-class ProgramActivity2 : AppCompatActivity() {
+class Room2Fragment : Fragment() {
 
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager2: ViewPager2
-    private lateinit var button: Button
-    private lateinit var button2: Button
     private lateinit var adapter: pageAdapter2
 
-    @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_program2)
 
-    button = findViewById(R.id.preDayId)
-    button2 = findViewById(R.id.homepageId)
-    tabLayout = findViewById(R.id.tabdayTowid)
-    viewPager2 = findViewById(R.id.viewpageDayTwoId)
-    adapter = pageAdapter2(supportFragmentManager,lifecycle)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val rootView: View = inflater.inflate(R.layout.fragment_room2, container, false)
 
-        button.setOnClickListener{
-            val nextpage = Intent(this,ProgramActivity::class.java);
-            startActivity(nextpage);
-        }
-        button2.setOnClickListener{
-                val nextpage = Intent(this,MainActivity::class.java);
-                startActivity(nextpage);
-        }
+        tabLayout = rootView.findViewById(R.id.tabdaytowid)
+        viewPager2 = rootView.findViewById(R.id.viewpagedaytwoId)
+        adapter = pageAdapter2(childFragmentManager,lifecycle)
+
 
         tabLayout.addTab(tabLayout.newTab().setText("Room 1"))
         tabLayout.addTab(tabLayout.newTab().setText("Room 2"))
@@ -45,6 +32,7 @@ class ProgramActivity2 : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("Room 4"))
 
         viewPager2.adapter =adapter
+
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {
@@ -70,6 +58,7 @@ class ProgramActivity2 : AppCompatActivity() {
             }
         })
 
+        return rootView
     }
 
 

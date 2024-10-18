@@ -8,13 +8,9 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.Window
 import android.view.WindowManager
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -57,15 +53,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         openFragment(HomeFragment())
 
         binding.fab.setOnClickListener{
-            val nextpages = Intent(this,NoteActivity::class.java);
-            startActivity(nextpages);
+            val nextpages = Intent(this,NoteActivity::class.java)
+            startActivity(nextpages)
         }
 
         binding.versionText.text = getCurrentVersion(packageManager, packageName)
 
 
-
-        changeStatusBarColor("#46449B") // Replace with your desired color code
+// Replace with your desired color code
+        changeStatusBarColor("#46449B")
     }
 
     private fun changeStatusBarColor(color: String) {
@@ -111,7 +107,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentTransaction.commit()
     }
 
-    fun getCurrentVersion(packageManager: PackageManager, packageName: String, flags: Int = 0): String{
+    private fun getCurrentVersion(packageManager: PackageManager, packageName: String, flags: Int = 0): String{
         return try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
                 packageManager.getPackageInfo(packageName, PackageManager.PackageInfoFlags.of(flags.toLong())).versionName

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/firstDay"
+        android:title="30 Nov 2024"/>
+    <item android:id="@+id/lastDay"
+        android:title="01 Dec 2024"/>
+
+</menu>

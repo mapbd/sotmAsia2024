@@ -3,6 +3,8 @@
     <string name="open_nav">Open Navigation</string>
     <string name="close_nav">Close Navigation</string>
     <string name="fab_name">Add Note</string>
+    <string name="day_one">30 November 2024</string>
+    <string name="day_two">01 December 2024</string>
 
     <string name="about_text">This app that displays the main content of the event State of the Map Asia 2024, Coxs Bazar,Bangladesh.</string>
     <string name="imprint_text">The content of this app is provided by:</string>
