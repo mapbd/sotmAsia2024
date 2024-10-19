@@ -1,0 +1,7 @@
+css folder
+fonts folder
+images folder
+js folder
+index
+style
+this file
