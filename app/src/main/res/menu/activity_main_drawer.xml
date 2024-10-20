@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/coc"
+            android:icon="@drawable/code_of_conduct"
+            android:title="Code of Contuct" />
+        <item
+            android:id="@+id/sponsors"
+            android:icon="@drawable/sponsors"
+            android:title="Sponsor" />
+
+    </group>
+
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/cop"
+            android:title="Co Program" />
+        <item
+            android:id="@+id/organisers"
+            android:title="Organisers" />
+        <item
+            android:id="@+id/versionsId"
+            android:title="About" />
+
+    </group>
+</menu>

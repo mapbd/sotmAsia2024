@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <item android:id="@+id/home"
-        android:title="Home"
-        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/noteActivity"
+        android:title="noteActivity"
+        android:icon="@drawable/baseline_speaker_notes_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/programActivity"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="Calender"
+        app:showAsAction="always"/>
+    <item android:id="@+id/emergency"
+        android:title="Emergency"/>
+    <item android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/baseline_map_24"
+        app:showAsAction="always"/>
 
     <item android:id="@+id/help"
         android:title="Help"
+        app:showAsAction="always"
         android:icon="@drawable/baseline_help_24"/>
-
-    <item
-        android:title=""
-        android:enabled="true"/>
-
-
-    <item android:id="@+id/coc"
-        android:title="Code of Conduct"
-        android:icon="@drawable/code_of_conduct"/>
-    <item android:id="@+id/map"
-        android:title="Map"
-        android:icon="@drawable/baseline_map_24"/>
 </menu>

@@ -1,20 +1,18 @@
-package org.map_bd.sotmasia2024
+package org.map_bd.sotmasia2024.ui.home
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.fragment.app.commit
-import androidx.fragment.app.replace
-import androidx.navigation.Navigation
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import org.map_bd.sotmasia2024.ProgramActivity
+import org.map_bd.sotmasia2024.R
 import org.map_bd.sotmasia2024.databinding.FragmentHomeBinding
-
 
 class HomeFragment : Fragment(), View.OnClickListener {
 
@@ -32,7 +30,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.programIds -> {
-                val intent = Intent(activity,ProgramActivity::class.java)
+                val intent = Intent(activity, ProgramActivity::class.java)
                 startActivity(intent)
             }
 
@@ -40,8 +38,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
         }
     }
-
-
 
 
 }

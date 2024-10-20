@@ -7,12 +7,11 @@
 
     <ScrollView
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_marginTop="60dp"
             android:orientation="vertical"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
@@ -30,6 +29,18 @@
             <ImageView
                 android:layout_marginTop="10dp"
                 android:src="@drawable/boil_logo"
+                android:layout_width="300dp"
+                android:layout_height="140dp"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/osmbd"
+                android:layout_width="300dp"
+                android:layout_height="140dp"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ymbd"
                 android:layout_width="300dp"
                 android:layout_height="140dp"/>
 
