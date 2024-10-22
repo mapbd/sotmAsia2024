@@ -2,7 +2,9 @@ package org.map_bd.sotmasia2024
 
 
 
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -54,7 +56,16 @@ class MapActivity : AppCompatActivity() {
 
 
 
+    binding.direction.setOnClickListener {
 
+        //var mylocation =binding.tvLatLng.text
+
+        val gmmIntentUri =
+            Uri.parse("google.navigation:q=21.42607900785744,91.97393549532941&avoid=tf")
+        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        startActivity(mapIntent)
+    }
 
 
 
@@ -106,7 +117,7 @@ class MapActivity : AppCompatActivity() {
     private fun updateTextView(geoPoint: GeoPoint) {
         val latitude = geoPoint.latitude
         val longitude = geoPoint.longitude
-        binding.tvLatLng.text = "Latitude: $latitude, Longitude: $longitude"
+        binding.tvLatLng.text = "$latitude,$longitude"
     }
 
 

@@ -87,4 +87,6 @@ dependencies {
 //    implementation ("org.osmdroid:osmdroid-mapsforge:6.1.20")
 //    implementation ("org.osmdroid:osmdroid-geopackage:6.1.20")
 //    implementation ("org.osmdroid:osmdroid-third-party:6.0.1")
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 }

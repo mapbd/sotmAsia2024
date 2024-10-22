@@ -7,4 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".EmergencyActivity">
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_margin="10dp"
+          android:text="Emergency Number"
+          android:textSize="20sp"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+
+<!--<ImageView-->
+<!--    android:layout_marginBottom="10dp"-->
+<!--    android:src="@drawable/state_of_the_map_asia_logo"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"/>-->
+
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/listId"
+          tools:listitem="@layout/list_item"/>
+
+  </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
