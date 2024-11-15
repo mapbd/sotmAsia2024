@@ -5,6 +5,7 @@ package org.map_bd.sotmasia2024
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.MenuItem
@@ -12,10 +13,13 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.map_bd.sotmasia2024.databinding.ActivityMapBinding
+import org.map_bd.sotmasia2024.ui.MainMapViewModel
+import org.map_bd.sotmasia2024.ui.MainViewModel
 import org.osmdroid.api.IMapController
 import org.osmdroid.config.Configuration
 import org.osmdroid.util.GeoPoint
@@ -36,6 +40,8 @@ class MapActivity : AppCompatActivity() {
     private lateinit var mMap: MapView
     private lateinit var myLocationOverlay: MyLocationNewOverlay
     private lateinit var mapController: IMapController
+
+    private lateinit var viewModel: MainMapViewModel
 
 
 
@@ -65,6 +71,9 @@ class MapActivity : AppCompatActivity() {
         mMap = binding.streetMapView
 
         initializeOSM()
+
+        viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
+            MainMapViewModel::class.java)
 
 
         val rotationGestureOverlay = RotationGestureOverlay(mMap)
@@ -106,10 +115,16 @@ class MapActivity : AppCompatActivity() {
         mapIntent.setPackage("com.google.android.apps.maps")
         startActivity(mapIntent)
 
-
-
-
+        val model = Build.MODEL.toString()
+        val brand = Build.BRAND.toString()
+        val ids = Build.ID.toString()
+        val lat = geoPoint.latitude.toString()
+        val long = geoPoint.longitude.toString()
+        viewModel.postData(model,brand,ids,lat,long)
     }
+        viewModel.getStatus().observe(this,{
+            Toast.makeText(this,it, Toast.LENGTH_SHORT).show()
+        })
 
 
 
