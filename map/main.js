@@ -158,15 +158,15 @@ function addPoints(data) {
   for (let row = 0; row < data.length; row++) {
     let marker;
     if (markerType == "circleMarker") {
-      marker = L.circleMarker([data[row].lat, data[row].lon], {
+      marker = L.circleMarker([data[row].lat, data[row].long], {
         radius: markerRadius,
       });
     } else if (markerType == "circle") {
-      marker = L.circle([data[row].lat, data[row].lon], {
+      marker = L.circle([data[row].lat, data[row].long], {
         radius: markerRadius,
       });
     } else {
-      marker = L.marker([data[row].lat, data[row].lon]);
+      marker = L.marker([data[row].lat, data[row].long]);
     }
     marker.addTo(pointGroupLayer);
 
@@ -175,7 +175,7 @@ function addPoints(data) {
     //     map.addLayer(markers);
 
     // UNCOMMENT THIS LINE TO USE POPUPS
-    marker.bindPopup('<a href=' + data[row].image + ' target="_blank"><img src= ' + data[row].image + ' alt="Image" width="200" height="120"></a><br> <h3> Name: ' + data[row].name + '</h3> Type: ' + data[row].description + '');
+    marker.bindPopup('<h3> Model: ' + data[row].model + '</h3> Brand: ' + data[row].brand + '');
 
     // COMMENT THE NEXT GROUP OF LINES TO DISABLE SIDEBAR FOR THE MARKERS
     // marker.feature = {
