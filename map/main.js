@@ -11,7 +11,7 @@
 
 let geomURL ="";
 
-let pointsURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBhaOEzhB8NoIV7GaHSxNoQ68PGH6TL88cla50r8eBFf7gq7rA5DQ5H1SQPeZvD26q_5e5OSBql75p/pub?gid=0&single=true&output=csv";
+let pointsURL ="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBhaOEzhB8NoIV7GaHSxNoQ68PGH6TL88cla50r8eBFf7gq7rA5DQ5H1SQPeZvD26q_5e5OSBql75p/pub?gid=1001334901&single=true&output=csv";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -158,15 +158,15 @@ function addPoints(data) {
   for (let row = 0; row < data.length; row++) {
     let marker;
     if (markerType == "circleMarker") {
-      marker = L.circleMarker([data[row].lat, data[row].long], {
+      marker = L.circleMarker([data[row].lat, data[row].lon], {
         radius: markerRadius,
       });
     } else if (markerType == "circle") {
-      marker = L.circle([data[row].lat, data[row].long], {
+      marker = L.circle([data[row].lat, data[row].lon], {
         radius: markerRadius,
       });
     } else {
-      marker = L.marker([data[row].lat, data[row].long]);
+      marker = L.marker([data[row].lat, data[row].lon]);
     }
     marker.addTo(pointGroupLayer);
 
