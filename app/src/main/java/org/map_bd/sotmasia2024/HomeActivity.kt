@@ -24,16 +24,16 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     //private lateinit var fragmentManager: FragmentManager
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.versionText.text = getCurrentVersion(packageManager, packageName)
-
 
 
         binding.versionsId.setOnClickListener{
@@ -41,20 +41,15 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-
         setSupportActionBar(binding.appBarHome.toolbar)
 
-        binding.appBarHome.fab.setOnClickListener {
-            val nextpages = Intent(this,NoteActivity::class.java)
-            startActivity(nextpages)
-        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_home)
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.versionsId, R.id.coc, R.id.cop, R.id.organisers, R.id.sponsors
+                R.id.nav_home,R.id.versionsId, R.id.coc, R.id.cop, R.id.organisers, R.id.sponsors
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -76,6 +71,7 @@ class HomeActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_home)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 
     private fun getCurrentVersion(packageManager: PackageManager, packageName: String, flags: Int = 0): String{
         return try {

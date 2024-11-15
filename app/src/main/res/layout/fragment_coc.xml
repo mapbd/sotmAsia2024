@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CocActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        app:title="Code of Conduct"
-        app:titleTextColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/Theme.SotMAsia2024.PopupOverlay"
-        tools:ignore="MissingConstraints" />
+    android:background="@color/white"
+    tools:context=".fragments.CocFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -106,7 +94,7 @@
                 android:text="For More Info:" />
 
             <TextView
-                android:id="@+id/wikiId"
+                android:id="@+id/wikiIds"
                 android:layout_marginBottom="20dp"
                 android:padding="20dp"
                 android:layout_gravity="center"
@@ -121,4 +109,4 @@
 
     </ScrollView>
 
-</LinearLayout>
+</FrameLayout>

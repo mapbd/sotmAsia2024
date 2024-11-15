@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bghome"
-    tools:context=".HomeFragment">
+    tools:context=".ui.home.HomeFragment">
 
     <ImageView
         android:layout_marginBottom="130dp"
@@ -14,6 +15,7 @@
         android:src="@drawable/state_of_the_map_asia_logo"/>
 
     <Button
+        android:onClick="programs"
         android:id="@+id/programIds"
         android:textSize="15sp"
         android:textColor="@color/myperple"
@@ -22,5 +24,15 @@
         android:layout_width="wrap_content"
         android:background="@drawable/transparent_bg_bordered"
         android:layout_height="wrap_content"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/baseline_speaker_notes_24" />
+
 
 </FrameLayout>

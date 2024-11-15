@@ -57,5 +57,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
+    <string name="internet">Please turn On your Internet for looking Program Schedule.</string>
+
 
 </resources>

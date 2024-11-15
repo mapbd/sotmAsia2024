@@ -17,6 +17,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 import org.map_bd.sotmasia2024.databinding.ActivityMainBinding
 import org.map_bd.sotmasia2024.ui.help.HelpActivity
+import org.map_bd.sotmasia2024.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
