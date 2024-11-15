@@ -15,7 +15,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.ui.onNavDestinationSelected
 import org.map_bd.sotmasia2024.databinding.ActivityHomeBinding
 
@@ -41,9 +40,6 @@ class HomeActivity : AppCompatActivity() {
             openUrl("https://mapbd.github.io/sotmAsia2024")
 
         }
-
-
-
 
 
         setSupportActionBar(binding.appBarHome.toolbar)

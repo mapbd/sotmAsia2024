@@ -2,6 +2,7 @@ package org.map_bd.sotmasia2024
 
 import android.os.Build
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.Window
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +23,9 @@ class NoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
 
+        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
         setupViewModel()
 
         changeStatusBarColor("#46449B") // Replace with your desired color code
@@ -40,6 +44,9 @@ class NoteActivity : AppCompatActivity() {
         val viewModelProviderFactory = NoteViewModelFactory(application, noteRepository)
         noteViewModel = ViewModelProvider(this, viewModelProviderFactory)[NoteViewModel::class.java]
     }
+
+
+
 
 
 }

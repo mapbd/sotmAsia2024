@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import org.map_bd.sotmasia2024.databinding.ActivityUserBinding
@@ -19,6 +20,9 @@ class UserActivity : AppCompatActivity() {
         binding= ActivityUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         var name = intent.getStringExtra("name")
         var phone = intent.getStringExtra("phone")
         var imageId = intent.getIntExtra("imageId",R.drawable.unnamed)
@@ -26,6 +30,8 @@ class UserActivity : AppCompatActivity() {
         binding.profileName.text = name
         binding.profilePhone.text = phone
         binding.profileImage.setImageResource(imageId)
+
+        binding.toolbar.title = name
 
 
 
@@ -48,5 +54,15 @@ class UserActivity : AppCompatActivity() {
 
 
 
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home ->{
+                finish()
+                return true
+            }
+
+        }
+        return true
     }
 }

@@ -20,11 +20,6 @@
         android:name="org.map_bd.sotmasia2024.MapActivity"
         android:label="activity_map"
         tools:layout="@layout/activity_map" />
-    <fragment
-        android:id="@+id/versionsId"
-        android:name="org.map_bd.sotmasia2024.AboutFragment"
-        android:label="fragment_about"
-        tools:layout="@layout/fragment_about" />
     <activity
         android:id="@+id/programActivity"
         android:name="org.map_bd.sotmasia2024.ProgramActivity"
@@ -40,25 +35,30 @@
         android:name="org.map_bd.sotmasia2024.EmergencyActivity"
         android:label="activity_emergency"
         tools:layout="@layout/activity_emergency" />
-    <fragment
-        android:id="@+id/coc"
-        android:name="org.map_bd.sotmasia2024.CocFragment"
-        android:label="fragment_coc"
-        tools:layout="@layout/fragment_coc" />
-    <fragment
-        android:id="@+id/cop"
-        android:name="org.map_bd.sotmasia2024.CopFragment"
-        android:label="fragment_cop"
-        tools:layout="@layout/fragment_cop" />
-    <fragment
+    <activity
+        android:id="@+id/versionsId"
+        android:name="org.map_bd.sotmasia2024.AboutActivity"
+        android:label="activity_about"
+        tools:layout="@layout/activity_about" />
+    <activity
         android:id="@+id/organisers"
-        android:name="org.map_bd.sotmasia2024.OrganisersFragment"
-        android:label="fragment_organisers"
-        tools:layout="@layout/fragment_organisers" />
-    <fragment
+        android:name="org.map_bd.sotmasia2024.OrganisersActivity"
+        android:label="activity_organisers"
+        tools:layout="@layout/activity_organisers" />
+    <activity
+        android:id="@+id/cop"
+        android:name="org.map_bd.sotmasia2024.CopActivity"
+        android:label="activity_cop"
+        tools:layout="@layout/activity_cop" />
+    <activity
         android:id="@+id/sponsors"
-        android:name="org.map_bd.sotmasia2024.SponsorsFragment"
-        android:label="fragment_sponsors"
-        tools:layout="@layout/fragment_sponsors" />
+        android:name="org.map_bd.sotmasia2024.SponsorsActivity"
+        android:label="activity_sponsors"
+        tools:layout="@layout/activity_sponsors" />
+    <activity
+        android:id="@+id/coc"
+        android:name="org.map_bd.sotmasia2024.CocActivity"
+        android:label="activity_coc"
+        tools:layout="@layout/activity_coc" />
 
 </navigation>

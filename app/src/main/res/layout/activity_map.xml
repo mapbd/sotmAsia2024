@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MapActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Map"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.SotMAsia2024.PopupOverlay"
+        tools:ignore="MissingConstraints" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/coordinatorLayout2"
         android:layout_width="match_parent"

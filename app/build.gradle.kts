@@ -18,7 +18,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.1"
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         archivesName ="sotmAsia2024-v${versionName}-${versionCode}"
@@ -89,4 +89,12 @@ dependencies {
 //    implementation ("org.osmdroid:osmdroid-third-party:6.0.1")
 
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
 }

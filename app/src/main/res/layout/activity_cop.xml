@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CopFragment">
+    tools:context=".CopActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Co-Program"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.SotMAsia2024.PopupOverlay"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +40,7 @@
                 android:gravity="center"/>
 
             <ImageView
+                android:id="@+id/sotmAsia"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/state_of_the_map_asia_logo"
                 android:layout_width="300dp"
@@ -44,18 +58,21 @@
                 android:gravity="center"/>
 
             <ImageView
+                android:id="@+id/sotmBd"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/sotmbd"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"/>
 
             <ImageView
+                android:id="@+id/ymsum"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/ymbd_summit"
                 android:layout_width="300dp"
                 android:layout_height="100dp"/>
 
             <ImageView
+                android:id="@+id/hotsum"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/hot_summit"
@@ -69,7 +86,4 @@
 
     </ScrollView>
 
-
-
-
-</FrameLayout>
+</LinearLayout>

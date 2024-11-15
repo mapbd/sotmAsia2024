@@ -6,6 +6,8 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.util.DisplayMetrics
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +20,11 @@ import org.osmdroid.api.IMapController
 import org.osmdroid.config.Configuration
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
+import org.osmdroid.views.overlay.Marker
+import org.osmdroid.views.overlay.ScaleBarOverlay
+import org.osmdroid.views.overlay.compass.CompassOverlay
+import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider
+import org.osmdroid.views.overlay.gestures.RotationGestureOverlay
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay
 
@@ -50,9 +57,42 @@ class MapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMapBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
         mMap = binding.streetMapView
 
         initializeOSM()
+
+
+        val rotationGestureOverlay = RotationGestureOverlay(mMap)
+        rotationGestureOverlay.isEnabled
+        mMap.setMultiTouchControls(true)
+        mMap.overlays.add(rotationGestureOverlay)
+
+
+        val dm : DisplayMetrics = this.resources.displayMetrics
+        val scaleBarOverlay = ScaleBarOverlay(mMap)
+        scaleBarOverlay.setCentred(true)
+//play around with these values to get the location on screen in the right place for your application
+        scaleBarOverlay.setScaleBarOffset(dm.widthPixels / 2, 10)
+        mMap.overlays.add(scaleBarOverlay)
+
+
+        val compassOverlay = CompassOverlay(this, InternalCompassOrientationProvider(this), mMap)
+        compassOverlay.enableCompass()
+        mMap.overlays.add(compassOverlay)
+
+        val marker = Marker(mMap)
+        val geoPoint = GeoPoint(21.425975, 91.973977)
+        marker.position = geoPoint
+        marker.icon = ContextCompat.getDrawable(this, R.drawable.state_of_the_map_asia_logo)
+        marker.title = "SotM Asia"
+        marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_CENTER)
+        mMap.overlays.add(marker)
+        mMap.invalidate()
 
 
 
@@ -121,7 +161,16 @@ class MapActivity : AppCompatActivity() {
     }
 
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home ->{
+                finish()
+                return true
+            }
 
+        }
+        return true
+    }
 
 
 }

@@ -2,6 +2,7 @@ package org.map_bd.sotmasia2024
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import org.map_bd.sotmasia2024.databinding.ActivityEmergencyBinding
 
@@ -17,6 +18,9 @@ private lateinit var userArrayList: ArrayList<User>
         super.onCreate(savedInstanceState)
         binding = ActivityEmergencyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
         val imageId = intArrayOf(
@@ -65,5 +69,15 @@ private lateinit var userArrayList: ArrayList<User>
 
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home ->{
+                finish()
+                return true
+            }
+
+        }
+        return true
+    }
 
 }

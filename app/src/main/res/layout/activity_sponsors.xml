@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SponsorsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Sponsor"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.SotMAsia2024.PopupOverlay"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:textSize="30sp"
+                android:textColor="@color/myperple"
+                android:text="Our sponsors"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rectangle_border"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:text="Gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/hotId"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hot_logo"
+                android:layout_width="180dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:text="Silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:text="Bronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

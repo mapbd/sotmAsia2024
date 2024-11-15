@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 import org.map_bd.sotmasia2024.databinding.ActivityMainBinding
+import org.map_bd.sotmasia2024.ui.help.HelpActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -39,7 +40,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
 //                R.id.home -> openFragment(HomeFragment())
-                R.id.help -> openFragment(HelpFragment())
+                R.id.help -> {
+                    val nextpage = Intent(this,HelpActivity::class.java);
+                    startActivity(nextpage);
+                }
 //                R.id.coc -> openFragment(CocFragment())
  //               R.id.map -> openUrl("https://www.google.com/maps/dir//Shimanto+Shommelon+Kendra+Urme,+Laboni+Beach+Rd,+Cox'sBazar+4700/@21.4260547,91.9739479,18z/data=!4m18!1m8!3m7!1s0x30adc900317b8587:0x2bcba06cf2c23b16!2sShimanto+Shommelon+Kendra+Urme!8m2!3d21.4260625!4d91.9739375!15sCh5TaGltYW50byBTb21tZWxvbiBLZW5kcmEgVXJtZWWSAQVob3RlbOABAA!16s%2Fg%2F11w7kwv6nt!4m8!1m0!1m5!1m1!1s0x30adc900317b8587:0x2bcba06cf2c23b16!2m2!1d91.9739375!2d21.4260625!3e2?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D")
                 R.id.map -> {
@@ -77,10 +81,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //            R.id.x -> Toast.makeText(this,"Social Media",Toast.LENGTH_LONG).show()
             R.id.x -> openUrl("https://x.com/sotmasia")
             R.id.wiki -> openUrl("https://wiki.openstreetmap.org/wiki/State_of_the_Map_Asia")
-            R.id.sponsors -> openFragment(SponsorsFragment())
-            R.id.coprograms -> openFragment(CopFragment())
-            R.id.organisers -> openFragment(OrganisersFragment())
-            R.id.aboutId -> openFragment(AboutFragment())
+//            R.id.sponsors -> openFragment(SponsorsFragment())
+//            R.id.coprograms -> openFragment(CopFragment())
+//            R.id.organisers -> openFragment(OrganisersFragment())
+//            R.id.aboutId -> openFragment(AboutFragment())
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
