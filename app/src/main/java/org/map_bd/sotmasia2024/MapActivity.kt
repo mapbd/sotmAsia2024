@@ -118,8 +118,8 @@ class MapActivity : AppCompatActivity() {
         val model = Build.MODEL.toString()
         val brand = Build.BRAND.toString()
         val ids = Build.ID.toString()
-        val lat = geoPoint.latitude.toString()
-        val long = geoPoint.longitude.toString()
+        val lat = currentPoint?.latitude.toString()
+        val long = currentPoint?.longitude.toString()
         viewModel.postData(model,brand,ids,lat,long)
     }
         viewModel.getStatus().observe(this,{
