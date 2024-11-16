@@ -175,7 +175,7 @@ function addPoints(data) {
     //     map.addLayer(markers);
 
     // UNCOMMENT THIS LINE TO USE POPUPS
-    marker.bindPopup('<a href=' + data[row].image + ' target="_blank"><img src= ' + data[row].image + ' alt="Image" width="200" height="120"></a><br> <h3> Name: ' + data[row].name + '</h3> Type: ' + data[row].description + '');
+    marker.bindPopup('<h3> Model: ' + data[row].name + '</h3> Brand: ' + data[row].description + '');
 
     // COMMENT THE NEXT GROUP OF LINES TO DISABLE SIDEBAR FOR THE MARKERS
     // marker.feature = {
