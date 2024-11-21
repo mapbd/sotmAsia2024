@@ -1,26 +1,14 @@
 [
   {
-    "time": "",
-    "speaker": "Comeing Soon",
-    "name": "",
-    "talk": ""
+    "time": "10:15",
+    "speaker": "Workshop 02",
+    "name": "Krishna Prosad Mondal (IT Officer, Institute of Remote Sensing and GIS, Jahangirnagar University, Bangladesh)",
+    "talk": "UAV Basics and Drone Image Analysis with Agisoft Metashape"
   },
   {
-    "time": "",
-    "speaker": "",
-    "name": "",
-    "talk": ""
-  },
-  {
-    "time": "",
-    "speaker": "",
-    "name": "",
-    "talk": ""
-  },
-  {
-    "time": "",
-    "speaker": "",
-    "name": "",
-    "talk": ""
+    "time": "11:45",
+    "speaker": "Workshop 03",
+    "name": "Md Yeamun Hasan Soumick (University of Rajshahi)",
+    "talk": "Creating Your Own University Campus Map Using OSM Data in QGIS for Beginners."
   }
 ]
