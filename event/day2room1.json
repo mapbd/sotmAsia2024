@@ -1,25 +1,73 @@
 [
   {
-    "time": "",
-    "speaker": "Comeing Soon",
+    "time": "10:15",
+    "speaker": "",
+    "name": "Ifat Sharmin (Shahjalal University of Science and Technology, Sylhet)",
+    "talk": "Urban Expansion and Housing Dynamics: A Geospatial Analysis of Residential Growth Patterns in Sylhet City Corporation"
+  },
+  {
+    "time": "10:30",
+    "speaker": "",
+    "name": "Ramisa Maliha,\nNafisa Nandini,\nKhondaker Mostak Ahammed ,\nFaiza Waziha,\nBrazil Singh",
+    "talk": "Light Talk 02"
+  },
+  {
+    "time": "11:00",
+    "speaker": "",
+    "name": "Dennis Raylin Chen (OpenStreetMap Taiwan)",
+    "talk": "Balancing Different Requirement and Contributer's attention: Taiwan's Hobbyist Experienct"
+  },
+  {
+    "time": "11:15",
+    "speaker": "",
+    "name": "Anika Tabassum Ohee (Bangabandhu Sheikh Mujibur Rahman Maritime University, Bangladesh)",
+    "talk": "Urban Green Space Mapping for Heat Reduction and Climate Resilience"
+  },
+  {
+    "time": "12:30",
+    "speaker": "",
+    "name": "Vivek Durme\nRajendran Keerthana\nNilabrata Sanyal\nRojina Dhakal\nGorakh",
+    "talk": "Scholars Talk"
+  },
+  {
+    "time": "13:00",
+    "speaker": "Lunch",
     "name": "",
     "talk": ""
   },
   {
-    "time": "",
+    "time": "14:00",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Mehedi Hasan Ovi (University of Barishal)",
+    "talk": "Geomorphic Index Alteration of the Sandhya River in Babuganj, Barishal, Bangladesh, and Associated Socioeconomic Impacts."
   },
   {
-    "time": "",
+    "time": "14:15",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Khan Mohammad Ibtehal (Bangabandhu Sheikh Mujibur Rahman Maritime University, Bangladesh)",
+    "talk": "Transcendence to OSM Mapping: OM Guru Fellowship 2024 Experience"
   },
   {
-    "time": "",
+    "time": "14:30",
     "speaker": "",
+    "name": "Romeo Afrin Upama (Jahangirnagar University)",
+    "talk": "Assessing Data Quality in OpenStreetMap and Volunteered Geographic Information"
+  },
+  {
+    "time": "14:45",
+    "speaker": "",
+    "name": "Hasibul Ahmed Pulok (Jahangirnagar University)",
+    "talk": "Fine scale mapping of malaria cases at low cost and in less time in Southeastern Bangladesh using a participatory approach"
+  },
+  {
+    "time": "15:00",
+    "speaker": "",
+    "name": "Marzia Hossain Jamila (University of Dhaka)",
+    "talk": "OSM Data: A Potential Tool to Monitor the Realization of the Sustainable Development Goals (SDGs)"
+  },
+  {
+    "time": "15:15",
+    "speaker": "Coffee Break",
     "name": "",
     "talk": ""
   }
