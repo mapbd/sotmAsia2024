@@ -1,26 +1,44 @@
 [
   {
-    "time": "",
-    "speaker": "Comeing Soon",
-    "name": "",
-    "talk": ""
+    "time": "14:00",
+    "speaker": "",
+    "name": "Taichi Furuhashi (Aoyama Gakuin University/PoliMI)",
+    "talk": "Offline Web map server UNVT Portable 2024"
   },
   {
-    "time": "",
+    "time": "14:15",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Sushma Ghimire (Kathmandu Living Labs)",
+    "talk": "Leveraging Volunteered GIS and UAV for Urban Rooftop Farming in OSM: A Case Study from Nepal"
   },
   {
-    "time": "",
+    "time": "14:30",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Feye Andal (YouthMappers Philippines)",
+    "talk": "Advancing to Validation Stages in OSM – Challenges and Opportunities from the Regional Validation Hub: Philippine Camp"
   },
   {
-    "time": "",
+    "time": "14:45",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Anjar Akrimullah (Perkumpulan OpenStreetMap Indonesia)",
+    "talk": "Measuring Bikeability in Jakarta Using OpenStreetMap Data"
+  },
+  {
+    "time": "15:00",
+    "speaker": "",
+    "name": "Ark Arjun (OSM Kerala, India)",
+    "talk": "From Data Silos to Data Sharing - The Geodata Perspective"
+  },
+  {
+    "time": "15:15",
+    "speaker": "",
+    "name": "Aqsa Qalb (UMT Lahore, Pakiastan)",
+    "talk": "Assessing the Potential of Rainwater Harvesting through GIS and Remote Sensing Techniques in combating Urban Flooding in Lahore, Pakistan"
+  },
+  {
+    "time": "15:30",
+    "speaker": "",
+    "name": "Eftikhar Jaman, Pranta Datta, Md. Sarafat Islam (Jahangirnagar University)",
+    "talk": "Enhancing Rice Cultivation in Southeast Hilly Region of Bangladesh Using AHP and GIS techniques"
   }
 ]
