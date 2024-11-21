@@ -1,25 +1,85 @@
 [
   {
-    "time": "",
-    "speaker": "Comeing Soon",
+    "time": "11:45",
+    "speaker": "",
+    "name": "Ramya Ragupathy (Humanitarian OpenStreetMap Team)",
+    "talk": "Field Mapping Tasking Manager: Bringing Organized Editing for Real-World Mapping"
+  },
+  {
+    "time": "12:00",
+    "speaker": "",
+    "name": "Afia Tahmin Jahin (Patuakhali Science and Technology University)",
+    "talk": "Openstreet Map and AI: A Synergistic Partnership for Disaster Management"
+  },
+  {
+    "time": "12:15",
+    "speaker": "",
+    "name": "Dennis Raylin Chen (OpenStreetMap Taiwan)",
+    "talk": "Balance between Expectation and Mappers' Attention: the OpenStreetMap Taiwan Community High and Low"
+  },
+  {
+    "time": "12:30",
+    "speaker": "",
+    "name": "Miles Dejnille S Mendoza (University of the Philippines Research Institute YouthMappers)",
+    "talk": "Empowering Bataan Youth to Build Community Resilience Narratives: Integrating OpenStreetMap in Disaster Risk Reduction Education"
+  },
+  {
+    "time": "12:45",
+    "speaker": "",
+    "name": "Rajendran Keerthana (Eastern University of Sri-Lanka)",
+    "talk": "Harnessing OSM for Local Development and Community Empowerment in Srilanka"
+  },
+  {
+    "time": "13:00",
+    "speaker": "Lunch",
     "name": "",
     "talk": ""
   },
   {
-    "time": "",
+    "time": "14:00",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Saranya Nadaraj, Sri Lanka\nHasibul Ahmed Pulok, Bangladesh\nRamisa Maliha, Bangladesh\nMd. Abir Al Hasan Nafis, Bangladesh",
+    "talk": "Light Talk 01"
   },
   {
-    "time": "",
+    "time": "14:30",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Mohammad Azharul Islam (Bangabandhu Sheikh Mujibur Rahman Maritime University, Bangladesh)",
+    "talk": "Empowering Communities through Open Mapping: Bridging Youth and Technology for Sustainable Development in Asia"
   },
   {
-    "time": "",
+    "time": "14:45",
     "speaker": "",
+    "name": "Arun Kumar Bhomi (Kathmandu University)",
+    "talk": "OSM: By Women, For Women: Emergency Care Mapping."
+  },
+  {
+    "time": "15:00",
+    "speaker": "",
+    "name": "Mehedi Hasan Ovi (University of Barishal, Bangladesh)",
+    "talk": "Geo-Spatial Flood Susceptibility Modelling Using Analytical Hierarchy Process: A Case Study in the Southwestern Coastal Region of Bangladesh"
+  },
+  {
+    "time": "15:15",
+    "speaker": "",
+    "name": "Asif Bin Alam Seum (Shahjalal University of Science and Technology, Bangladesh)",
+    "talk": "Geospatial Analysis of Sunamganj's Flood Vulnerabilities: OSM-Enhanced Exploration of the Haor Landscape"
+  },
+  {
+    "time": "15:30",
+    "speaker": "",
+    "name": "Zobaer Rahman (Jahangirnagar University)",
+    "talk": "Modeling on the Climatic Factors for Changing Trend of Chinadi Beel Wetland at Narsingdi District in Bangladesh"
+  },
+  {
+    "time": "15:45",
+    "speaker": "",
+    "name": "Maruf Ahmed (Institute of Water & Flood Management, BUET)",
+    "talk": "From Data to Action: Creating 3D Flood Visualizations with open source tools like OSM and QGIS"
+  },
+  {
+    "time": "16:00",
+    "speaker": "Coffee Break",
     "name": "",
     "talk": ""
   }
