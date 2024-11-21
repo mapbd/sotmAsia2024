@@ -1,25 +1,85 @@
 [
   {
-    "time": "",
-    "speaker": "Comeing Soon",
+    "time": "10:15",
+    "speaker": "",
+    "name": "Arnalie (OSM Philippines)",
+    "talk": "Pardon my delay, I'm navigating outside of my comfort zone"
+  },
+  {
+    "time": "10:30",
+    "speaker": "",
+    "name": "Amrit Karmacharya (OSM Nepal)",
+    "talk": "Designing An Osm Data-Based Map Stylesheet"
+  },
+  {
+    "time": "10:45",
+    "speaker": "",
+    "name": "Fatima Nazir Ali (British Council & HEC ICRG-57, Pakistan)",
+    "talk": "Evaluation Of Deforestation impacts on Temperature Patterns in Balochistan, Pakistan"
+  },
+  {
+    "time": "11:00",
+    "speaker": "",
+    "name": "Mohammed Ameen Fathima Amal (South Eastern University of Sri-Lanka)",
+    "talk": "Geo-Informatic Application in Tourism Management and Development Utilizing OSM data in Beruwla region: Srilanka"
+  },
+  {
+    "time": "11:15",
+    "speaker": "",
+    "name": "Quang Huy NGUYEN (OSM Vietnam)",
+    "talk": "Applying digital fabrication for mapping mountainous vulnerable villages in Central Vietnam"
+  },
+  {
+    "time": "11:30",
+    "speaker": "",
+    "name": "Kyaw Zayar Linn (Centre for Development and Environment, Myanmar/Thailand)",
+    "talk": "myOSM reactivation"
+  },
+  {
+    "time": "11:45",
+    "speaker": "",
+    "name": "Md. Sarafat Islam (Jahangirnagar University)",
+    "talk": "Tea suitability model using Multi-Criteria Decision Analysis: A GIS and Remote Sensing appraisal in Habiganj District"
+  },
+  {
+    "time": "12:00",
+    "speaker": "",
+    "name": "Sajeevini Sivajothy (University of Sri Jeyawarthanapura, Sri Lanka)",
+    "talk": "State of OpenStreetMap Field Mapping Activities and Their Importance for the Future of Sri Lanka"
+  },
+  {
+    "time": "12:15",
+    "speaker": "",
+    "name": "Bapaala Alhassan Zuliatu (KNUST YOUTHMAPPERS, Ghana)",
+    "talk": "ROLE OF OPEN STREET MAP DATA AS A VALUABLE RESOURCE FOR TACKLING SOCIAL AND ENVIRONMENTAL CHALLENGES"
+  },
+  {
+    "time": "12:30",
+    "speaker": "",
+    "name": "Akor Daniel Enechojo (University of Nigeria, Nsukka)",
+    "talk": "Mapping Flood Vulnerable Communities for Enhanced Disaster Resilience in Healthcare Centers and Communities in Numan LGA, Adamawa state, Nigeria"
+  },
+  {
+    "time": "12:45",
+    "speaker": "",
+    "name": "Calvin Amevienku (YouthMappers CKT-UTAS, Ghana)",
+    "talk": "Empowering Local Communities through Youth-Led Mapping: The Role of YouthMappers in Expanding OpenStreetMap"
+  },
+  {
+    "time": "13:00",
+    "speaker": "Lunch",
     "name": "",
     "talk": ""
   },
   {
-    "time": "",
+    "time": "14:00",
     "speaker": "",
-    "name": "",
-    "talk": ""
+    "name": "Supported by OM Guru,\nOSM Bangladesh &\nYouthMappers",
+    "talk": "GIS Day & OSM GeoAwarness Week Celebration Mapathon"
   },
   {
-    "time": "",
-    "speaker": "",
-    "name": "",
-    "talk": ""
-  },
-  {
-    "time": "",
-    "speaker": "",
+    "time": "15:15",
+    "speaker": "Coffee Break",
     "name": "",
     "talk": ""
   }
