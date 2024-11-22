@@ -47,7 +47,7 @@
                 android:layout_height="60dp"/>
 
             <TextView
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/poppins"
@@ -56,8 +56,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
+            <ImageView
+                android:id="@+id/metaId"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/meta"
+                android:layout_width="180dp"
+                android:layout_height="60dp"/>
+
             <TextView
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/poppins"
@@ -65,6 +73,59 @@
                 android:text="Bronze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/barikoiId"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/barikoi"-->
+<!--                    android:layout_width="180dp"-->
+<!--                    android:layout_height="60dp"/>-->
+
+                <ImageView
+                    android:id="@+id/boilId"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/boil_logo"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"/>
+
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"
+                android:text="Supporter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+                <ImageView
+                    android:id="@+id/tomtomId"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tomtom"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"/>
+
+                <ImageView
+                    android:id="@+id/bkashId"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bkash"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"/>
+
+
+
 
 
         </LinearLayout>

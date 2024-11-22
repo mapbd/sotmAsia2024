@@ -26,10 +26,10 @@ class Room2Fragment : Fragment() {
         adapter = pageAdapter2(childFragmentManager,lifecycle)
 
 
-        tabLayout.addTab(tabLayout.newTab().setText("Room 1"))
-        tabLayout.addTab(tabLayout.newTab().setText("Room 2"))
-        tabLayout.addTab(tabLayout.newTab().setText("Room 3"))
-        tabLayout.addTab(tabLayout.newTab().setText("Room 4"))
+        tabLayout.addTab(tabLayout.newTab().setText("Main Hall"))
+        tabLayout.addTab(tabLayout.newTab().setText("Hall 01"))
+        tabLayout.addTab(tabLayout.newTab().setText("Hall 02 (Virtuall)"))
+        tabLayout.addTab(tabLayout.newTab().setText("Meeting Room"))
 
         viewPager2.adapter =adapter
 
