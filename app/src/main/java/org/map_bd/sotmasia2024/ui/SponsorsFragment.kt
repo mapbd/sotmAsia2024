@@ -16,6 +16,8 @@ class SponsorsFragment : Fragment() {
 
 
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,7 +27,7 @@ class SponsorsFragment : Fragment() {
 
         val hot: ImageView =view.findViewById(R.id.hotId)
         val meta: ImageView =view.findViewById(R.id.metaId)
-//        val barikoi: ImageView =view.findViewById(R.id.barikoiId)
+        val barikoi: ImageView =view.findViewById(R.id.barikoiId)
         val boil: ImageView =view.findViewById(R.id.boilId)
         val tomtom: ImageView =view.findViewById(R.id.tomtomId)
         val bkash: ImageView =view.findViewById(R.id.bkashId)
@@ -35,9 +37,9 @@ class SponsorsFragment : Fragment() {
         meta.setOnClickListener{
             openUrl("https://www.meta.com/")
         }
-//        barikoi.setOnClickListener{
-//            openUrl("https://barikoi.com/")
-//        }
+        barikoi.setOnClickListener{
+            openUrl("https://barikoi.com/")
+        }
         boil.setOnClickListener{
             openUrl("https://boiledbhoot.org/")
         }
