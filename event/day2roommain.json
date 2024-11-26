@@ -7,9 +7,9 @@
   },
   {
     "time": "9:50",
-    "speaker": "Coffee Break",
+    "speaker": "",
     "name": "",
-    "talk": ""
+    "talk": "Coffee Break"
   },
   {
     "time": "10:15",
@@ -43,9 +43,9 @@
   },
   {
     "time": "13:00",
-    "speaker": "Lunch",
+    "speaker": "",
     "name": "",
-    "talk": ""
+    "talk": "Lunch"
   },
   {
     "time": "14:00",
@@ -73,15 +73,15 @@
   },
   {
     "time": "15:15",
-    "speaker": "Coffee Break",
+    "speaker": "",
     "name": "",
-    "talk": ""
+    "talk": "Coffee Break"
   },
   {
     "time": "15:30",
-    "speaker": "Recognition",
+    "speaker": "",
     "name": "",
-    "talk": ""
+    "talk": "Recognition"
   },
   {
     "time": "16:00",
