@@ -13,9 +13,9 @@
   },
   {
     "time": "9:30",
-    "speaker": "Keynote 01",
-    "name": "",
-    "talk": ""
+    "speaker": "",
+    "name": "Nama Raj Budhathoki (Open Mapping Hub Asia Pacific)",
+    "talk": "Keynote 01"
   },
   {
     "time": "9:50",
@@ -37,21 +37,21 @@
   },
   {
     "time": "11:45",
-    "speaker": "Sponsorship Talk 01",
+    "speaker": "BariKoi",
     "name": "",
     "talk": ""
   },
   {
     "time": "12:00",
-    "speaker": "Sponsorship Talk 02",
+    "speaker": "bKash Limited",
     "name": "",
     "talk": ""
   },
   {
     "time": "12:15",
-    "speaker": "Sponsorship Talk 03",
-    "name": "",
-    "talk": ""
+    "speaker": "",
+    "name": "Mikko Tamura (OpenMappingHub Asia Pacific)",
+    "talk": "A Regional Humanitarian Open Mapping Movement: Welcome the OM Gurus!"
   },
   {
     "time": "12:30",
@@ -79,7 +79,7 @@
   },
   {
     "time": "14:15",
-    "speaker": "Organizational Talk",
+    "speaker": "World Vision",
     "name": "",
     "talk": ""
   },

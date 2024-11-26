@@ -66,6 +66,12 @@
     "talk": "Mapping Critical Infrastructures for Disaster Resilience Using OpenStreetMap"
   },
   {
+    "time": "15:00",
+    "speaker": "",
+    "name": "CartoNG, France",
+    "talk": "The Confluence of Local Knowledge and Data in Anticipatory Planning"
+  },
+  {
     "time": "15:15",
     "speaker": "Coffee Break",
     "name": "",
@@ -73,12 +79,24 @@
   },
   {
     "time": "15:30",
-    "speaker": "Keynote 02",
+    "speaker": "Recognition",
     "name": "",
     "talk": ""
   },
   {
     "time": "16:00",
+    "speaker": "",
+    "name": "",
+    "talk": "Speech"
+  },
+  {
+    "time": "16:15",
+    "speaker": "",
+    "name": "Pete Master (Humanitarian OpenStreetMap Team (HOT))",
+    "talk": "Keynote 02"
+  },
+  {
+    "time": "16:30",
     "speaker": "",
     "name": "",
     "talk": "Closing"
